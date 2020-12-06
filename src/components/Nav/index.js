@@ -9,12 +9,19 @@ import {
 import Header from "../Header";
 import Link from "../Link";
 
-const Nav = () => (
+const Nav = ({ darkMode = false, click }) => (
  <Header color="secondary-color-dark">
   <MDBContainer>
    <MDBNavbarBrand>
-    <strong className="white-text">DEV NUGGETS</strong>
+    <strong className="white-text">Kingsley Victor</strong>
    </MDBNavbarBrand>
+   <MDBNavbarNav left>
+    <MDBNavItem>
+     <Link to="#" onClick={click}>
+      <MDBIcon icon={darkMode ? "moon" : "sun"} className="white-text" />
+     </Link>
+    </MDBNavItem>
+   </MDBNavbarNav>
    <MDBNavbarNav right>
     <MDBNavItem>
      <Link to="#!">
