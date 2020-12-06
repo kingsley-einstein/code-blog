@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Components from "./components";
+import Pages from "./pages";
 
-const App = () => <Components.Nav></Components.Nav>;
+const App = () => <Pages.Router></Pages.Router>;
 
 export default App;
